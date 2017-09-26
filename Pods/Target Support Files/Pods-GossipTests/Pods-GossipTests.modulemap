@@ -1,0 +1,6 @@
+framework module Pods_GossipTests {
+  umbrella header "Pods-GossipTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
