@@ -8,6 +8,9 @@
 
 import UIKit
 import FBSDKCoreKit
+import FBSDKLoginKit
+import FBSDKShareKit
+
 
 class MainViewController: UIViewController {
   
@@ -20,22 +23,28 @@ class MainViewController: UIViewController {
   }
   
   func getFacebookInfomation() {
-    let graphRequest: FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id,email,gender,link,locale,name,timezone,updated_time,verified,last_name,first_name,middle_name"])
+//    let graphRequest: FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id,email,gender,link,locale,name,timezone,updated_time,verified,last_name,first_name,middle_name"])
+//
+//    graphRequest.start(completionHandler: { (connection, result, error) -> Void in
+//
+//      if ((error) != nil)
+//      {
+//        // Process error
+//        print("Error: \(error)")
+//      }
+//      else
+//      {
+//        print("fetched user: \(result)")
+//
+//
+//        // 個々の情報を取得したいときはこんな感じ
+//
+//      }
+//    })
     
-    graphRequest.start(completionHandler: { (connection, result, error) -> Void in
-      
-      if ((error) != nil)
-      {
-        // Process error
-        print("Error: \(error)")
-      }
-      else
-      {
-        print("fetched user: \(result)")
-        
-        // 個々の情報を取得したいときはこんな感じ
-      }
-    })
+    
+    
+    
   }
 
   override func didReceiveMemoryWarning() {

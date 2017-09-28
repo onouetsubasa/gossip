@@ -10,12 +10,16 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKShareKit
 import FBSDKCoreKit
+import Firebase
+
 
 class ViewController: UIViewController {
 
   @IBOutlet weak var backgroundImageView: UIImageView!
   @IBOutlet weak var logoImageView: UIImageView!
   @IBOutlet weak var button: UIButton!
+  
+  let facebookLoginButton = FBSDKLoginButton()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -31,9 +35,17 @@ class ViewController: UIViewController {
     button.layer.cornerRadius = 10
     button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
     
+    facebookLoginButton.layer.position.x = myWidth/2
+    facebookLoginButton.frame.origin.y = myHeight  - 100
+    facebookLoginButton.delegate = self
+    
+    view.addSubview(facebookLoginButton)
+    
     logoImageView.image = #imageLiteral(resourceName: "logo")
     logoImageView.contentMode = .scaleAspectFit
   }
+  
+  
   
   @objc func tapButton() {
     let loginManager: FBSDKLoginManager = FBSDKLoginManager()
@@ -57,5 +69,34 @@ class ViewController: UIViewController {
     }
   }
   
+  func loginFireBase(with credential: AuthCredential) {
+    
+    Auth.auth().signIn(with: credential) { (user, error) in
+      if let error = error {
+        // ...
+        return
+      }
+      self.moveMainVC()
+    }
+    
+  }
+  
+}
+
+extension ViewController: FBSDKLoginButtonDelegate {
+  
+  func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+    if let error = error {
+      print(error.localizedDescription)
+      return
+    }
+    
+    let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+    loginFireBase(with: credential)
+  }
+  
+  func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+    
+  }
 }
 
