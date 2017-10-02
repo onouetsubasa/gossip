@@ -9,7 +9,7 @@ target 'Gossip' do
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
   pod 'FBSDKShareKit'
-  pod ‘Firebase/Core’
+  pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Google'
 
