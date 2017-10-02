@@ -49,7 +49,7 @@
 		63379F570268768BBD41CA15 /* Pods-GossipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GossipTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GossipTests/Pods-GossipTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C626AC35F774A3759A0B3B4 /* Pods-Gossip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gossip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gossip/Pods-Gossip.debug.xcconfig"; sourceTree = "<group>"; };
 		818D7631A87835F9C99BB119 /* Pods-GossipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GossipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GossipUITests/Pods-GossipUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A5A46F1C1F763DE9006F9DA5 /* Gossip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gossip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A46F1C1F763DE9006F9DA5 /* Gossipaaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gossipaaa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A46F1F1F763DE9006F9DA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A46F211F763DE9006F9DA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5A46F241F763DE9006F9DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		A5A46F1D1F763DE9006F9DA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5A46F1C1F763DE9006F9DA5 /* Gossip.app */,
+				A5A46F1C1F763DE9006F9DA5 /* Gossipaaa.app */,
 				A5A46F331F763DE9006F9DA5 /* GossipTests.xctest */,
 				A5A46F3E1F763DE9006F9DA5 /* GossipUITests.xctest */,
 			);
@@ -221,7 +221,7 @@
 			);
 			name = Gossip;
 			productName = Gossip;
-			productReference = A5A46F1C1F763DE9006F9DA5 /* Gossip.app */;
+			productReference = A5A46F1C1F763DE9006F9DA5 /* Gossipaaa.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A5A46F321F763DE9006F9DA5 /* GossipTests */ = {
@@ -656,12 +656,14 @@
 			baseConfigurationReference = 7C626AC35F774A3759A0B3B4 /* Pods-Gossip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RELRRHCKXU;
+				DEVELOPMENT_TEAM = V47WNW2GNM;
 				INFOPLIST_FILE = Gossip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Gossip.Gossip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Gossip.GossipTom;
+				PRODUCT_NAME = "$(TARGET_NAME)aaa";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -672,12 +674,14 @@
 			baseConfigurationReference = 1ED1F5726160719EF61CA90B /* Pods-Gossip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RELRRHCKXU;
+				DEVELOPMENT_TEAM = V47WNW2GNM;
 				INFOPLIST_FILE = Gossip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Gossip.Gossip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Gossip.GossipTom;
+				PRODUCT_NAME = "$(TARGET_NAME)aaa";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
