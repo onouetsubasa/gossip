@@ -13,6 +13,24 @@ let myHeight: CGFloat = UIScreen.main.bounds.size.height
 
 class MainView: UIView {
   
+  var friendInfos: [Fri]? {
+    didSet {
+      userCollectionView.reloadData()
+    }
+  }
+  
+  var friendNames: [String]? {
+    didSet {
+      userCollectionView.reloadData()
+    }
+  }
+  
+  var friendImages: [String]? {
+    didSet {
+      userCollectionView.reloadData()
+    }
+  }
+  
   let questionLabel: UILabel = {
     let label = UILabel()
     label.frame = CGRect(x: myWidth*0.05, y: 100, width: myWidth*0.9, height: 50)
@@ -38,8 +56,6 @@ class MainView: UIView {
     collection.layer.masksToBounds = true
     collection.isScrollEnabled = false
     collection.setCollectionViewLayout(layout, animated: false)
-    collection.tag = 3
-//    collection.contentInset.top = 50
     
     return collection
   }()
@@ -71,7 +87,16 @@ class MainView: UIView {
 extension MainView: UICollectionViewDataSource {
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 4
+    
+    if let name = friendNames {
+      if name.count >= 4 {
+        return 4
+      } else {
+        return name.count
+      }
+    } else {
+      return 1
+    }
   }
   
   func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -81,7 +106,10 @@ extension MainView: UICollectionViewDataSource {
   internal func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UserCell", for: indexPath) as! UserCell
-    cell.backgroundColor = UIColor.blue
+    
+    if let _friendInfo = friendInfos {
+      cell.configure(info: _friendInfo[indexPath.item])
+    }
     return cell
   }
   

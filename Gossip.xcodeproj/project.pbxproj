@@ -22,6 +22,7 @@
 		A5E188121F7661EF0004F1FD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E188111F7661EF0004F1FD /* MainView.swift */; };
 		A5E188141F7663C40004F1FD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E188131F7663C40004F1FD /* UserCell.swift */; };
 		A5E188171F76B7BC0004F1FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5E188161F76B35A0004F1FD /* GoogleService-Info.plist */; };
+		A5E6C8F41F98B81000E51289 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6C8F31F98B81000E51289 /* FriendModel.swift */; };
 		EA9CF8933B58932F1775FC52 /* Pods_GossipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97075E5F0FFC2500168E1FD /* Pods_GossipTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		A5E188111F7661EF0004F1FD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A5E188131F7663C40004F1FD /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		A5E188161F76B35A0004F1FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5E6C8F31F98B81000E51289 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		A8308DE9E6577EE7235D17EC /* Pods-GossipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GossipTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GossipTests/Pods-GossipTests.release.xcconfig"; sourceTree = "<group>"; };
 		BCF547AEDBDC3DEC1C723507 /* Pods_Gossip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gossip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97075E5F0FFC2500168E1FD /* Pods_GossipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GossipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +163,7 @@
 				A5A46F2E1F763DE9006F9DA5 /* Info.plist */,
 				A5E188081F76545A0004F1FD /* Gossip-bridging-Header.h */,
 				A5A46F261F763DE9006F9DA5 /* Gossip.xcdatamodeld */,
+				A5E6C8F31F98B81000E51289 /* FriendModel.swift */,
 			);
 			path = Gossip;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				A5A46F201F763DE9006F9DA5 /* AppDelegate.swift in Sources */,
 				A5A46F281F763DE9006F9DA5 /* Gossip.xcdatamodeld in Sources */,
 				A5E1880B1F76562B0004F1FD /* UIColor+Extension.swift in Sources */,
+				A5E6C8F41F98B81000E51289 /* FriendModel.swift in Sources */,
 				A5E1880D1F765C810004F1FD /* MainViewController.swift in Sources */,
 				A5E188141F7663C40004F1FD /* UserCell.swift in Sources */,
 			);
@@ -656,12 +660,14 @@
 			baseConfigurationReference = 7C626AC35F774A3759A0B3B4 /* Pods-Gossip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RELRRHCKXU;
+				DEVELOPMENT_TEAM = WRUN44EUP7;
 				INFOPLIST_FILE = Gossip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gossip.Gossip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -672,12 +678,14 @@
 			baseConfigurationReference = 1ED1F5726160719EF61CA90B /* Pods-Gossip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RELRRHCKXU;
+				DEVELOPMENT_TEAM = WRUN44EUP7;
 				INFOPLIST_FILE = Gossip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gossip.Gossip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

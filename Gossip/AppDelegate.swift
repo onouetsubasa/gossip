@@ -26,6 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //FireBaseSDK
     FirebaseApp.configure()
     
+    let main = MainViewController()
+    window?.rootViewController = main
+    
     return true
   }
 
