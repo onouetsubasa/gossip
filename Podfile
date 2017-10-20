@@ -11,6 +11,7 @@ target 'Gossip' do
   pod 'FBSDKShareKit'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
   pod 'Google'
 
   target 'GossipTests' do
