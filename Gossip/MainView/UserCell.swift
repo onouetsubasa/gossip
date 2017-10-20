@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class UserCell: UICollectionViewCell {
   
@@ -36,6 +38,16 @@ class UserCell: UICollectionViewCell {
   func setupObjects() {
     addSubview(userImageView)
     addSubview(nameLabel)
+  }
+  
+  func configure(info: Fri) {
+    nameLabel.text = info.name
+    
+    if let urlString = info.image {
+      let url = Foundation.URL(string: urlString)!
+      userImageView.af_setImage(withURL: url, placeholderImage: UIImage(), imageTransition: .crossDissolve(0.3), runImageTransitionIfCached: true, completion: nil)
+    }
+    
   }
   
 }
