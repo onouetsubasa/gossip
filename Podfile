@@ -13,6 +13,9 @@ target 'Gossip' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Google'
+  pod ‘ObjectMapper’
+  pod ‘AlamofireImage’, ‘~> 3.3’
+  pod ‘Alamofire’
 
   target 'GossipTests' do
     inherit! :search_paths

@@ -95,13 +95,13 @@ extension ViewController: FBSDKLoginButtonDelegate {
     loginFireBase(with: credential)
   }
   
-  func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-    let firebaseAuth = Auth.auth()
-    do {
-        try firebaseAuth.signOut()
-    } catch let signOutError as NSError {
-        print ("Error signing out: %@", signOutError)
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
     }
-  }
 }
 

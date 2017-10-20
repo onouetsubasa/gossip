@@ -26,6 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //FireBaseSDK
     FirebaseApp.configure()
     
+    let mainview = MainViewController()
+    if let window = UIApplication.shared.keyWindow{
+        window.rootViewController = mainview
+    }
+    
     return true
   }
 
