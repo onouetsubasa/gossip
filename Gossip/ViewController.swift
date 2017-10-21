@@ -11,13 +11,17 @@ import FBSDKLoginKit
 import FBSDKShareKit
 import FBSDKCoreKit
 import Firebase
-
+import FirebaseDatabase
 
 class ViewController: UIViewController {
 
   @IBOutlet weak var backgroundImageView: UIImageView!
   @IBOutlet weak var logoImageView: UIImageView!
   @IBOutlet weak var button: UIButton!
+  var user: User!
+  var users = [GossipUser]()
+  var ref: DatabaseReference!
+  private var databaseHandle: DatabaseHandle!
   
   let facebookLoginButton = FBSDKLoginButton()
   
@@ -25,6 +29,9 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     setObjects()
+    user = Auth.auth().currentUser
+    ref = Database.database().reference()
+    print("Debug------------",ref.child("users").accessibilityElementCount())
   }
   
   func setObjects() {
@@ -86,14 +93,16 @@ class ViewController: UIViewController {
 extension ViewController: FBSDKLoginButtonDelegate {
   
   func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+    
     if let error = error {
       print(error.localizedDescription)
       return
     }
     
     let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-    loginFireBase(with: credential)
-  }
+        loginFireBase(with: credential)
+        print("Debug------------",ref.child("users").accessibilityElementCount())
+    }
   
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         let firebaseAuth = Auth.auth()

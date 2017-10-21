@@ -12,6 +12,7 @@ import FBSDKLoginKit
 import FBSDKShareKit
 import Firebase
 import ObjectMapper
+import FirebaseDatabase
 
 struct Friends {
   var id: String
@@ -26,7 +27,8 @@ struct Fri {
 class MainViewController: UIViewController {
   
   let mainView = MainView()
-  
+    var ref: DatabaseReference!
+    private var databaseHandle: DatabaseHandle!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -47,6 +49,7 @@ class MainViewController: UIViewController {
       
       return
     }
+    newUser(newuser: user)
     getFacebookInfomation()
     
   }
@@ -103,5 +106,21 @@ class MainViewController: UIViewController {
     connection.start()
     
   }
+    
+    func newUser(newuser: User) {
+        ref = Database.database().reference()
+        ref.child("users").observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            if let x = value?[newuser.uid]{
+                print("---------------------1debug-------------: Already signed up",value?[newuser.uid])
+            }else{
+                self.ref.child("users").child(newuser.uid).setValue(["name":newuser.displayName])
+                print("---------------------1debug-------------: New user created", newuser)
+            }
+
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
 
 }
