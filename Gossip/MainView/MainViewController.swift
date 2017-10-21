@@ -23,14 +23,15 @@ struct Fri {
   var image: String!
 }
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, MainViewDelegate {
   
   let mainView = MainView()
-  
+  var friends: [Fri] = []
 
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    mainView.delegate = self
     view = mainView
     checkAuth()
   }
@@ -47,6 +48,8 @@ class MainViewController: UIViewController {
       
       return
     }
+    
+    print(user.uid, "uid")
     getFacebookInfomation()
     
   }
@@ -66,7 +69,7 @@ class MainViewController: UIViewController {
   func getFacebookInfomation() {
     
     var params = ["fields": "id, name, picture.type(large)"]
-    params["limit"] = "10"
+    params["limit"] = "1000"
     let graphRequest = FBSDKGraphRequest(graphPath: "me/taggable_friends", parameters: params)
     let connection = FBSDKGraphRequestConnection()
     connection.add(graphRequest, completionHandler: { [weak self] (connection, result, error) in
@@ -91,17 +94,31 @@ class MainViewController: UIViewController {
             self.friendInfo.append(f)
           }
           
-          self.mainView.friendInfos = self.friendInfo
+          self.mainView.friendInfos = self.randamFriends()
         }
         
       } else {
         print("Error Getting Friends \(error)");
       }
-      
     })
     
     connection.start()
+  }
+  
+  func randamFriends() -> [Fri] {
     
+    var randamFriend: [Fri] = []
+    
+    for _ in 0..<4{
+      let num = arc4random() % UInt32(friendInfo.count)
+      let numInt = Int(num)
+      let frend = friendInfo[numInt]
+      print(numInt, "計算ランダム")
+      print(friendInfo.count, "max")
+      randamFriend.append(frend)
+    }
+    
+    return randamFriend
   }
 
 }

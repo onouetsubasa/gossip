@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		28B89BA2B6EDA25B58877B5C /* Pods_Gossip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF547AEDBDC3DEC1C723507 /* Pods_Gossip.framework */; };
 		6B27018E3A0A40EB8CFDE2D3 /* Pods_GossipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1037FD40C062ED031CC629 /* Pods_GossipUITests.framework */; };
+		A56ABC8F1F9B3E5C00A8C55D /* FriendDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56ABC8E1F9B3E5C00A8C55D /* FriendDetailCollectionViewCell.swift */; };
 		A5A46F201F763DE9006F9DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A46F1F1F763DE9006F9DA5 /* AppDelegate.swift */; };
 		A5A46F221F763DE9006F9DA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A46F211F763DE9006F9DA5 /* ViewController.swift */; };
 		A5A46F251F763DE9006F9DA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A46F231F763DE9006F9DA5 /* Main.storyboard */; };
@@ -23,6 +24,11 @@
 		A5E188141F7663C40004F1FD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E188131F7663C40004F1FD /* UserCell.swift */; };
 		A5E188171F76B7BC0004F1FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5E188161F76B35A0004F1FD /* GoogleService-Info.plist */; };
 		A5E6C8F41F98B81000E51289 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6C8F31F98B81000E51289 /* FriendModel.swift */; };
+		A5E6C8F91F9B1F1500E51289 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6C8F81F9B1F1500E51289 /* FriendViewController.swift */; };
+		A5E6C9051F9B259700E51289 /* FriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6C9031F9B259700E51289 /* FriendCollectionViewCell.swift */; };
+		A5E6C9081F9B2F1600E51289 /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6C9071F9B2F1600E51289 /* FriendView.swift */; };
+		A5E6C90B1F9B35E300E51289 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6C90A1F9B35E300E51289 /* FriendDetailViewController.swift */; };
+		A5E6C90D1F9B361900E51289 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6C90C1F9B361900E51289 /* FriendDetailView.swift */; };
 		EA9CF8933B58932F1775FC52 /* Pods_GossipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97075E5F0FFC2500168E1FD /* Pods_GossipTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +56,7 @@
 		63379F570268768BBD41CA15 /* Pods-GossipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GossipTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GossipTests/Pods-GossipTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C626AC35F774A3759A0B3B4 /* Pods-Gossip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gossip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gossip/Pods-Gossip.debug.xcconfig"; sourceTree = "<group>"; };
 		818D7631A87835F9C99BB119 /* Pods-GossipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GossipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GossipUITests/Pods-GossipUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A56ABC8E1F9B3E5C00A8C55D /* FriendDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		A5A46F1C1F763DE9006F9DA5 /* Gossip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gossip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A46F1F1F763DE9006F9DA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A46F211F763DE9006F9DA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +78,11 @@
 		A5E188131F7663C40004F1FD /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		A5E188161F76B35A0004F1FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5E6C8F31F98B81000E51289 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
+		A5E6C8F81F9B1F1500E51289 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		A5E6C9031F9B259700E51289 /* FriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCollectionViewCell.swift; sourceTree = "<group>"; };
+		A5E6C9071F9B2F1600E51289 /* FriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
+		A5E6C90A1F9B35E300E51289 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		A5E6C90C1F9B361900E51289 /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
 		A8308DE9E6577EE7235D17EC /* Pods-GossipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GossipTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GossipTests/Pods-GossipTests.release.xcconfig"; sourceTree = "<group>"; };
 		BCF547AEDBDC3DEC1C723507 /* Pods_Gossip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gossip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97075E5F0FFC2500168E1FD /* Pods_GossipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GossipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +168,8 @@
 				A5A46F1F1F763DE9006F9DA5 /* AppDelegate.swift */,
 				A5A46F211F763DE9006F9DA5 /* ViewController.swift */,
 				A5E188101F7661D20004F1FD /* MainView */,
+				A5E6C8F51F9B1E2900E51289 /* Friend */,
+				A5E6C9091F9B35BB00E51289 /* FriendDetail */,
 				A5A46F231F763DE9006F9DA5 /* Main.storyboard */,
 				A5A46F291F763DE9006F9DA5 /* Assets.xcassets */,
 				A5A46F2B1F763DE9006F9DA5 /* LaunchScreen.storyboard */,
@@ -202,6 +216,34 @@
 				A5E188131F7663C40004F1FD /* UserCell.swift */,
 			);
 			path = MainView;
+			sourceTree = "<group>";
+		};
+		A5E6C8F51F9B1E2900E51289 /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				A5E6C8F81F9B1F1500E51289 /* FriendViewController.swift */,
+				A5E6C9071F9B2F1600E51289 /* FriendView.swift */,
+				A5E6C8FC1F9B204A00E51289 /* FriendCollectionCell */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		A5E6C8FC1F9B204A00E51289 /* FriendCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				A5E6C9031F9B259700E51289 /* FriendCollectionViewCell.swift */,
+			);
+			path = FriendCollectionCell;
+			sourceTree = "<group>";
+		};
+		A5E6C9091F9B35BB00E51289 /* FriendDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A5E6C90A1F9B35E300E51289 /* FriendDetailViewController.swift */,
+				A5E6C90C1F9B361900E51289 /* FriendDetailView.swift */,
+				A56ABC8E1F9B3E5C00A8C55D /* FriendDetailCollectionViewCell.swift */,
+			);
+			path = FriendDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,12 +530,18 @@
 			files = (
 				A5A46F221F763DE9006F9DA5 /* ViewController.swift in Sources */,
 				A5E188121F7661EF0004F1FD /* MainView.swift in Sources */,
+				A5E6C90B1F9B35E300E51289 /* FriendDetailViewController.swift in Sources */,
+				A5E6C9051F9B259700E51289 /* FriendCollectionViewCell.swift in Sources */,
 				A5A46F201F763DE9006F9DA5 /* AppDelegate.swift in Sources */,
 				A5A46F281F763DE9006F9DA5 /* Gossip.xcdatamodeld in Sources */,
 				A5E1880B1F76562B0004F1FD /* UIColor+Extension.swift in Sources */,
 				A5E6C8F41F98B81000E51289 /* FriendModel.swift in Sources */,
+				A5E6C8F91F9B1F1500E51289 /* FriendViewController.swift in Sources */,
 				A5E1880D1F765C810004F1FD /* MainViewController.swift in Sources */,
+				A5E6C90D1F9B361900E51289 /* FriendDetailView.swift in Sources */,
+				A5E6C9081F9B2F1600E51289 /* FriendView.swift in Sources */,
 				A5E188141F7663C40004F1FD /* UserCell.swift in Sources */,
+				A56ABC8F1F9B3E5C00A8C55D /* FriendDetailCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

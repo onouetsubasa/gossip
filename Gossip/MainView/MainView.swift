@@ -11,7 +11,13 @@ import UIKit
 let myWidth: CGFloat = UIScreen.main.bounds.size.width
 let myHeight: CGFloat = UIScreen.main.bounds.size.height
 
+protocol MainViewDelegate: class {
+  func randamFriends() -> [Fri]
+}
+
 class MainView: UIView {
+  
+  weak var delegate: MainViewDelegate?
   
   var friendInfos: [Fri]? {
     didSet {
@@ -88,7 +94,7 @@ extension MainView: UICollectionViewDataSource {
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     
-    if let name = friendNames {
+    if let name = friendInfos {
       if name.count >= 4 {
         return 4
       } else {
@@ -116,6 +122,10 @@ extension MainView: UICollectionViewDataSource {
 }
 
 extension MainView: UICollectionViewDelegate {
+  
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    friendInfos = delegate?.randamFriends()
+  }
   
 }
 
