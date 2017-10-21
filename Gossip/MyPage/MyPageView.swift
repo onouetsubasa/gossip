@@ -1,16 +1,22 @@
 //
-//  FriendDetailView.swift
+//  MyPageView.swift
 //  Gossip
 //
-//  Created by 尾之上翼 on 2017/10/21.
+//  Created by 尾之上翼 on 2017/10/22.
 //  Copyright © 2017年 Goissip. All rights reserved.
 //
 
 import UIKit
 
-final class FriendDetailView: UIView {
+final class MyPageView: UIView {
   
-  private let friendMeView: UIView = {
+  var gossip: [String]? {
+    didSet {
+      gossipCollectionView.reloadData()
+    }
+  }
+  
+  private let myView: UIView = {
     let view = UIView()
     view.frame = CGRect(x: 16, y: 40, width: myWidth - 32, height: 110)
     view.layer.cornerRadius = 10
@@ -55,18 +61,8 @@ final class FriendDetailView: UIView {
     return collection
   }()
   
-  var gossip: [String]? {
-    didSet {
-      gossipCollectionView.reloadData()
-    }
-  }
-  
-  init(info: String) {
-    nameLabel.text = info
-    nameLabel.sizeToFit()
-    nameLabel.frame.origin.x = userImageView.frame.maxX + 16
-    
-    super.init(frame: CGRect(x: 0, y: 0, width: myWidth, height: myHeight))
+  override init(frame: CGRect) {
+    super.init(frame: frame)
     initSet()
   }
   
@@ -81,18 +77,17 @@ final class FriendDetailView: UIView {
     gossipCollectionView.dataSource = self
     gossipCollectionView.delegate = self
     
-    friendMeView.addSubview(userImageView)
-    friendMeView.addSubview(nameLabel)
+    myView.addSubview(userImageView)
+    myView.addSubview(nameLabel)
     
-    addSubview(friendMeView)
+    addSubview(myView)
     addSubview(gossipCollectionView)
     
-    gossipCollectionView.frame.origin.y = friendMeView.frame.maxY + 10
+    gossipCollectionView.frame.origin.y = myView.frame.maxY + 10
   }
-  
 }
 
-extension FriendDetailView: UICollectionViewDataSource {
+extension MyPageView: UICollectionViewDataSource {
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     if let _friends = gossip {
@@ -119,7 +114,7 @@ extension FriendDetailView: UICollectionViewDataSource {
   
 }
 
-extension FriendDetailView: UICollectionViewDelegate {
+extension MyPageView: UICollectionViewDelegate {
   
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     if let _friends = gossip {
@@ -128,7 +123,7 @@ extension FriendDetailView: UICollectionViewDelegate {
   }
 }
 
-extension FriendDetailView: UICollectionViewDelegateFlowLayout {
+extension MyPageView: UICollectionViewDelegateFlowLayout {
   
   internal func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     return CGSize(width: myWidth, height: 110)

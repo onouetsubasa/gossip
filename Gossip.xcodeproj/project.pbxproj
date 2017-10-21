@@ -10,6 +10,8 @@
 		28B89BA2B6EDA25B58877B5C /* Pods_Gossip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF547AEDBDC3DEC1C723507 /* Pods_Gossip.framework */; };
 		6B27018E3A0A40EB8CFDE2D3 /* Pods_GossipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1037FD40C062ED031CC629 /* Pods_GossipUITests.framework */; };
 		A56ABC8F1F9B3E5C00A8C55D /* FriendDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56ABC8E1F9B3E5C00A8C55D /* FriendDetailCollectionViewCell.swift */; };
+		A56ABC921F9B9E3500A8C55D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56ABC911F9B9E3500A8C55D /* MyPageViewController.swift */; };
+		A56ABC941F9B9ED300A8C55D /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56ABC931F9B9ED300A8C55D /* MyPageView.swift */; };
 		A5A46F201F763DE9006F9DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A46F1F1F763DE9006F9DA5 /* AppDelegate.swift */; };
 		A5A46F221F763DE9006F9DA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A46F211F763DE9006F9DA5 /* ViewController.swift */; };
 		A5A46F251F763DE9006F9DA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A46F231F763DE9006F9DA5 /* Main.storyboard */; };
@@ -57,6 +59,8 @@
 		7C626AC35F774A3759A0B3B4 /* Pods-Gossip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gossip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gossip/Pods-Gossip.debug.xcconfig"; sourceTree = "<group>"; };
 		818D7631A87835F9C99BB119 /* Pods-GossipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GossipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GossipUITests/Pods-GossipUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A56ABC8E1F9B3E5C00A8C55D /* FriendDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		A56ABC911F9B9E3500A8C55D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		A56ABC931F9B9ED300A8C55D /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		A5A46F1C1F763DE9006F9DA5 /* Gossip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gossip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A46F1F1F763DE9006F9DA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A46F211F763DE9006F9DA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +143,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A56ABC901F9B9E1500A8C55D /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				A56ABC911F9B9E3500A8C55D /* MyPageViewController.swift */,
+				A56ABC931F9B9ED300A8C55D /* MyPageView.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 		A5A46F131F763DE9006F9DA5 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +183,7 @@
 				A5E188101F7661D20004F1FD /* MainView */,
 				A5E6C8F51F9B1E2900E51289 /* Friend */,
 				A5E6C9091F9B35BB00E51289 /* FriendDetail */,
+				A56ABC901F9B9E1500A8C55D /* MyPage */,
 				A5A46F231F763DE9006F9DA5 /* Main.storyboard */,
 				A5A46F291F763DE9006F9DA5 /* Assets.xcassets */,
 				A5A46F2B1F763DE9006F9DA5 /* LaunchScreen.storyboard */,
@@ -537,7 +551,9 @@
 				A5E1880B1F76562B0004F1FD /* UIColor+Extension.swift in Sources */,
 				A5E6C8F41F98B81000E51289 /* FriendModel.swift in Sources */,
 				A5E6C8F91F9B1F1500E51289 /* FriendViewController.swift in Sources */,
+				A56ABC941F9B9ED300A8C55D /* MyPageView.swift in Sources */,
 				A5E1880D1F765C810004F1FD /* MainViewController.swift in Sources */,
+				A56ABC921F9B9E3500A8C55D /* MyPageViewController.swift in Sources */,
 				A5E6C90D1F9B361900E51289 /* FriendDetailView.swift in Sources */,
 				A5E6C9081F9B2F1600E51289 /* FriendView.swift in Sources */,
 				A5E188141F7663C40004F1FD /* UserCell.swift in Sources */,
