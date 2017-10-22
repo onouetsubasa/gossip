@@ -23,6 +23,15 @@
 		A5E188141F7663C40004F1FD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E188131F7663C40004F1FD /* UserCell.swift */; };
 		A5E188171F76B7BC0004F1FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5E188161F76B35A0004F1FD /* GoogleService-Info.plist */; };
 		E933276B1F96121F00DC7B5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933276A1F96121F00DC7B5A /* LoginViewController.swift */; };
+		E97742791F9C6AF60040BAAD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97742781F9C6AF60040BAAD /* AdSupport.framework */; };
+		E977427B1F9C6AFF0040BAAD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E977427A1F9C6AFF0040BAAD /* AVFoundation.framework */; };
+		E977427D1F9C6B090040BAAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E977427C1F9C6B090040BAAD /* CoreGraphics.framework */; };
+		E977427F1F9C6B190040BAAD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E977427E1F9C6B190040BAAD /* CoreMedia.framework */; };
+		E97742811F9C6B250040BAAD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97742801F9C6B250040BAAD /* CoreTelephony.framework */; };
+		E97742831F9C6B300040BAAD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97742821F9C6B300040BAAD /* StoreKit.framework */; };
+		E97742851F9C6B3E0040BAAD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97742841F9C6B3E0040BAAD /* SystemConfiguration.framework */; };
+		E97742871F9C6B470040BAAD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97742861F9C6B470040BAAD /* WebKit.framework */; };
+		E977428E1F9C72000040BAAD /* AppLovinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E977428D1F9C71E70040BAAD /* AppLovinSDK.framework */; };
 		E9F873CD1F8256A400181C50 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F873CC1F8256A400181C50 /* Backend.swift */; };
 		EA9CF8933B58932F1775FC52 /* Pods_GossipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97075E5F0FFC2500168E1FD /* Pods_GossipTests.framework */; };
 /* End PBXBuildFile section */
@@ -64,7 +73,6 @@
 		A5A46F3E1F763DE9006F9DA5 /* GossipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GossipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A46F421F763DE9006F9DA5 /* GossipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GossipUITests.swift; sourceTree = "<group>"; };
 		A5A46F441F763DE9006F9DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5E188081F76545A0004F1FD /* Gossip-bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gossip-bridging-Header.h"; sourceTree = "<group>"; };
 		A5E1880A1F76562B0004F1FD /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A5E1880C1F765C810004F1FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A5E188111F7661EF0004F1FD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -73,6 +81,16 @@
 		A8308DE9E6577EE7235D17EC /* Pods-GossipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GossipTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GossipTests/Pods-GossipTests.release.xcconfig"; sourceTree = "<group>"; };
 		BCF547AEDBDC3DEC1C723507 /* Pods_Gossip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gossip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E933276A1F96121F00DC7B5A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E97742781F9C6AF60040BAAD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E977427A1F9C6AFF0040BAAD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E977427C1F9C6B090040BAAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E977427E1F9C6B190040BAAD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E97742801F9C6B250040BAAD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E97742821F9C6B300040BAAD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E97742841F9C6B3E0040BAAD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E97742861F9C6B470040BAAD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		E977428A1F9C6F470040BAAD /* Gossip-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gossip-Bridging-Header.h"; sourceTree = "<group>"; };
+		E977428D1F9C71E70040BAAD /* AppLovinSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppLovinSDK.framework; sourceTree = "<group>"; };
 		E9F873CB1F8252B400181C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9F873CC1F8256A400181C50 /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
 		F97075E5F0FFC2500168E1FD /* Pods_GossipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GossipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +101,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97742871F9C6B470040BAAD /* WebKit.framework in Frameworks */,
+				E97742851F9C6B3E0040BAAD /* SystemConfiguration.framework in Frameworks */,
+				E97742831F9C6B300040BAAD /* StoreKit.framework in Frameworks */,
+				E97742811F9C6B250040BAAD /* CoreTelephony.framework in Frameworks */,
+				E977427F1F9C6B190040BAAD /* CoreMedia.framework in Frameworks */,
+				E977427D1F9C6B090040BAAD /* CoreGraphics.framework in Frameworks */,
+				E977427B1F9C6AFF0040BAAD /* AVFoundation.framework in Frameworks */,
+				E97742791F9C6AF60040BAAD /* AdSupport.framework in Frameworks */,
+				E977428E1F9C72000040BAAD /* AppLovinSDK.framework in Frameworks */,
 				28B89BA2B6EDA25B58877B5C /* Pods_Gossip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +136,15 @@
 		573E7D58C628E59A40588271 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E977428D1F9C71E70040BAAD /* AppLovinSDK.framework */,
+				E97742861F9C6B470040BAAD /* WebKit.framework */,
+				E97742841F9C6B3E0040BAAD /* SystemConfiguration.framework */,
+				E97742821F9C6B300040BAAD /* StoreKit.framework */,
+				E97742801F9C6B250040BAAD /* CoreTelephony.framework */,
+				E977427E1F9C6B190040BAAD /* CoreMedia.framework */,
+				E977427C1F9C6B090040BAAD /* CoreGraphics.framework */,
+				E977427A1F9C6AFF0040BAAD /* AVFoundation.framework */,
+				E97742781F9C6AF60040BAAD /* AdSupport.framework */,
 				BCF547AEDBDC3DEC1C723507 /* Pods_Gossip.framework */,
 				F97075E5F0FFC2500168E1FD /* Pods_GossipTests.framework */,
 				1E1037FD40C062ED031CC629 /* Pods_GossipUITests.framework */,
@@ -164,9 +200,9 @@
 				A5A46F2B1F763DE9006F9DA5 /* LaunchScreen.storyboard */,
 				E9F873CB1F8252B400181C50 /* Info.plist */,
 				A5E188161F76B35A0004F1FD /* GoogleService-Info.plist */,
-				A5E188081F76545A0004F1FD /* Gossip-bridging-Header.h */,
 				A5A46F261F763DE9006F9DA5 /* Gossip.xcdatamodeld */,
 				E9F873CC1F8256A400181C50 /* Backend.swift */,
+				E977428A1F9C6F470040BAAD /* Gossip-Bridging-Header.h */,
 			);
 			path = Gossip;
 			sourceTree = "<group>";
@@ -699,11 +735,37 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V47WNW2GNM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Core/Sources",
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+					"\"${PODS_ROOT}/leveldb-library/\"",
+					"\"${PODS_ROOT}/leveldb-library/include\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+				);
 				INFOPLIST_FILE = Gossip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gossip.GossipTom;
 				PRODUCT_NAME = "$(TARGET_NAME)aaa";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/Gossip-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -717,11 +779,37 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V47WNW2GNM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Core/Sources",
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+					"\"${PODS_ROOT}/leveldb-library/\"",
+					"\"${PODS_ROOT}/leveldb-library/include\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+				);
 				INFOPLIST_FILE = Gossip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gossip.GossipTom;
 				PRODUCT_NAME = "$(TARGET_NAME)aaa";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/Gossip-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

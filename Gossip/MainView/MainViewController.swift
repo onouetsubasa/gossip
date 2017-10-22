@@ -13,6 +13,7 @@ import FBSDKShareKit
 import Firebase
 import ObjectMapper
 import FirebaseDatabase
+import AppLovinSDK
 
 struct Friends {
   var id: String
@@ -27,14 +28,22 @@ struct Fri {
 class MainViewController: UIViewController {
   
   let mainView = MainView()
-    var ref: DatabaseReference!
-    private var databaseHandle: DatabaseHandle!
-
+  var ref: DatabaseReference!
+  private var databaseHandle: DatabaseHandle!
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     
     view = mainView
     checkAuth()
+    
+    let AL = ALSdk.initializeSdk()
+    print("Applovin Debug",ALInterstitialAd.isReadyForDisplay())
+    if(ALInterstitialAd.isReadyForDisplay()){
+        ALInterstitialAd.show()
+    }else{
+        
+    }
   }
   
   func checkAuth() {
@@ -122,5 +131,9 @@ class MainViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
+    
+//    func doEvaluation(dic: [String : AnyObject]){
+//        <#function body#>
+//    }
 
 }

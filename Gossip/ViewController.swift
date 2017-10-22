@@ -19,7 +19,6 @@ class ViewController: UIViewController {
   @IBOutlet weak var logoImageView: UIImageView!
   @IBOutlet weak var button: UIButton!
   var user: User!
-  var users = [GossipUser]()
   var ref: DatabaseReference!
   private var databaseHandle: DatabaseHandle!
   
